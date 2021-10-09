@@ -1,2 +1,2 @@
-# animated-engine
+# basic_sample
 Базовые шаблоны
