@@ -30,3 +30,5 @@
 *.exe
 *.out
 *.app
+/void_function/.vs/void_function/v16/ipch/AutoPCH/41d44ca82f497c08
+/void_function/.vs/void_function/v16
