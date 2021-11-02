@@ -1,8 +1,36 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
+#include <vector>
 
 using namespace std;
 
+int el;
+vector<int> vec;
+
+void reading(vector<int> vec)
+{
+	while (cin >> el)
+	{
+		if (el != 0)
+		{
+			vec.push_back(el);
+		}
+		else
+		{
+			break;
+		}
+	}
+}
+
+void writing(vector<int> vec)
+{
+	cout << vec[0];
+	for (int i = 1; i < vec.size(); i++)
+	{
+		cout << ', ' << vec[i];
+	}
+}
 
 void task1(void)
 {
@@ -38,9 +66,9 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	int z, count_task, count = 0;
-	cout << "Введите количество операций:";
+	cout << "Enter the number of operations:";
 	cin >> count_task;
-	cout << "Введите номер задания : ";
+	cout << "Enter the number of task: ";
 	cin >> z;
 	while (count < count_task)
 	{
@@ -91,7 +119,7 @@ int main()
 		default:
 			break;
 		}
-		cout << "Выберите номер задания или 0 для завершения работы:";
+		cout << "If you want to exit the program press 0, otherwise enter the task number:";
 		cin >> z;
 	}
 	return 0;
